@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-navigation'
 import { Button, Icon } from 'react-native-elements'
 
-const ScreenOne = (props) => {
+const ScreenOne = (props: any) => {
   return (
     <SafeAreaView>
       <Button
