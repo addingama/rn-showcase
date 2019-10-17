@@ -6,27 +6,15 @@ import {
   Text,
   StatusBar
 } from 'react-native'
+import AppNavigation from './navigation/AppNavigation'
 
 const RootContainer = () => {
   return (
     <>
       <StatusBar barStyle='dark-content' />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior='automatic'
-          style={styles.scrollView}>
-          <Text>This is root container</Text>
-        </ScrollView>
-      </SafeAreaView>
+      <AppNavigation />
     </>
   )
 }
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: '#ffffff'
-  }
-
-})
 
 export default RootContainer
