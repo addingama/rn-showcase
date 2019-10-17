@@ -1,13 +1,14 @@
 import React from 'react'
-import { Text, TouchableHighlight } from 'react-native'
 import { SafeAreaView } from 'react-navigation'
+import { Button, Icon } from 'react-native-elements'
 
 const ScreenOne = (props) => {
   return (
     <SafeAreaView>
-      <TouchableHighlight onPress={() => props.navigation.navigate('ScreenTwo')}>
-        <Text>Cick me</Text>
-      </TouchableHighlight>
+      <Button
+        title='Click me'
+        icon={<Icon name='home' />}
+        onPress={() => props.navigation.navigate('ScreenTwo')} />
     </SafeAreaView>
   )
 }

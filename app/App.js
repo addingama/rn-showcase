@@ -9,11 +9,15 @@
 import React from 'react'
 
 import RootContainer from './RootContainer'
+import { ThemeProvider } from 'react-native-elements'
+import RNETheme from './theme/RNETheme'
 
 const App = () => {
   return (
     <>
-      <RootContainer />
+      <ThemeProvider theme={RNETheme}>
+        <RootContainer />
+      </ThemeProvider>
     </>
   )
 }
